@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Image } from 'react-bootstrap'
+import { Image, Row } from 'react-bootstrap'
 import { data } from '../../../data/data'
 import avatar from '../../../images/avatar.jpg'
 import './Profile.css'
@@ -14,14 +14,12 @@ const Profile = () => {
                     src = { avatar }/>
             </Row>
             <Row>
-    <h2 className = 'name'>{ data.profile.name }</h2>
+                <h2 className = 'name'>{ data.profile.name }</h2>
             </Row>
             <Row>
                 <p className = 'job'>{ data.profile.job }</p>
             </Row>
-            <Row className = 'w-100'>
-                <hr className = 'w-100'/>
-            </Row>
+            <hr className = 'divider w-100'/>
         </div>
     )
 }

@@ -5,13 +5,18 @@
 
 .contact-link {
     color: #000;
-    margin-left: auto;
     padding-left: 0;
     padding-right: 0;
 }
 
 .contact-link:hover {
-    color: #a9a9a9
+    color: #a9a9a9;
+    text-decoration: none;
+}
+
+.custom-nav {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .divider {
@@ -19,11 +24,14 @@
     margin-top: 30px;
 }
 
+.scroll-link {
+    margin-left: auto;
+}
+
 .text {
     margin-top: 15px;
 }
 
 .title {
-    margin-top: 15px;
     text-align: center;
 }

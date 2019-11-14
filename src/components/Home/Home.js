@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
-import { Container, Nav, Navbar } from 'react-bootstrap'
+import { Col, Container, Navbar } from 'react-bootstrap'
+import { Link } from 'react-scroll'
+import { Fade } from 'react-reveal'
 import { token } from '../../data/token'
+import Contact from './Contact/Contact'
 import Introduction from './Introduction/Introduction'
 import Knowledge from './Knowledge/Knowledge'
 import Profile from './Profile/Profile'
@@ -20,13 +23,35 @@ const Home = () => {
 
     return (
         <Container className = 'home-container' fluid>
-            <Navbar>
-                <Nav.Link className = 'contact-link' href = '#'>Contactar</Nav.Link>
-            </Navbar>
-            <Profile/>
-            <Introduction/>
-            <Knowledge/>
-            <Timeline/>
+            
+                <Col xl = {{ offset: 2, span: 8 }}>
+                    <Fade right>
+                        <Navbar className = 'custom-nav'>
+                            <Link
+                                className = 'scroll-link'
+                                smooth = 'true' 
+                                spy = { true } 
+                                to = 'bottom'>
+                                <a href = '#' className = 'contact-link'>Contactar</a>
+                            </Link>
+                        </Navbar>
+                    </Fade>
+                    <Fade bottom>
+                        <Profile/>
+                    </Fade>
+                    <Fade bottom>
+                        <Introduction/>
+                    </Fade>
+                    <Fade bottom>
+                        <Knowledge/>
+                    </Fade>
+                    <Fade bottom>
+                        <Timeline/>
+                    </Fade>
+                    <Fade bottom>
+                        <Contact/>
+                    </Fade>
+                </Col>
         </Container>
     )
 }
