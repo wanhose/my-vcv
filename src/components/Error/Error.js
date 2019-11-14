@@ -1,36 +1,13 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import { Icon, Paper } from '@material-ui/core'
+import { Alert } from 'react-bootstrap'
 
-const useStyles = makeStyles(theme => ({
-    box: {
-        left: '50%',
-        position: 'absolute',
-        top: '50%',
-        transform: 'translate(-50%,-50%)',
-        WebkitTransform: 'translate(-50%,-50%)',
-        width: '80%'
-    },
-    paper: {
-        backgroundColor: '#d50000',
-        color: 'white',
-        padding: 15,
-        textAlign: 'center'
-    }
-}))
-
-const Error = () => {
-    const classes = useStyles()
-    
+const Error = () => {    
     return (
-        <div className = { classes.box }>
-            <Paper 
-                className = { classes.paper }
-                color = 'primary'>
-                <Icon fontSize = 'large'>highlight_off</Icon>
-                <h2 style = {{ marginTop: '0.30em' }}>Acceso denegado</h2>
-                <p>No tienes acceso a esta web</p>
-            </Paper>
+        <div style = {{ padding: 15 }}>
+            <Alert variant = 'danger'>
+                <Alert.Heading>Acceso denegado</Alert.Heading>
+                <p>No tienes acceso a esta página web.</p>
+            </Alert>
         </div>
     )
 }

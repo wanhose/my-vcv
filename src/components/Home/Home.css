@@ -1,0 +1,29 @@
+.home-container {    
+    padding: 15px;
+    width: 100%;
+}
+
+.contact-link {
+    color: #000;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contact-link:hover {
+    color: #a9a9a9
+}
+
+.divider {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.text {
+    margin-top: 15px;
+}
+
+.title {
+    margin-top: 15px;
+    text-align: center;
+}

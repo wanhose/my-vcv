@@ -1,0 +1,26 @@
+.avatar {
+    border: solid white 5px;
+    box-shadow: 0px 0px 40px -15px rgba(0,0,0,0.75);
+    height: 192px;
+    -moz-box-shadow: 0px 0px 40px -15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 40px -15px rgba(0,0,0,0.75);
+    width: 192px;
+}
+
+.job {
+    font-size: 14pt;
+    margin-top: 7.5px;
+}
+
+.name {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.profile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}

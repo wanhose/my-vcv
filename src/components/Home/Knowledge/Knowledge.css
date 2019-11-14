@@ -1,0 +1,25 @@
+.custom-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.icon {
+    height: 128px;
+    width: 128px;
+}
+
+.knowledge-link {
+    color: #000;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.knowledge-link:hover {
+    color: #a9a9a9;
+    text-decoration: none;
+}
