@@ -20,7 +20,7 @@ const Contact = () => {
                         <h5>GitHub</h5>
                     </Row>
                     <Row>
-                        <a className = 'footer-contact-link' href = { data.profile.github}>{ data.profile.nick }</a>
+                        <a className = 'footer-contact-link' href = { data.profile.github} target = '_blank'>{ data.profile.nick }</a>
                     </Row>
                 </Col>
                 <Col className = 'contact-item'>
