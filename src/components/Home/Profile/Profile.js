@@ -19,6 +19,9 @@ const Profile = () => {
             <Row>
                 <p className = 'job'>{ data.profile.job }</p>
             </Row>
+            <Row>
+                <p className = 'location'>{ data.profile.location }</p>
+            </Row>
             <hr className = 'divider w-100'/>
         </div>
     )

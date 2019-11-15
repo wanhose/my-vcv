@@ -10,6 +10,14 @@
 .job {
     font-size: 14pt;
     margin-top: 7.5px;
+    margin-bottom: 0;
+}
+
+.location {
+    font-size: 12pt;
+    margin: 0;
+    margin-top: 7.5px;
+    font-style: italic;
 }
 
 .name {
