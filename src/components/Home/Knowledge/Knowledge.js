@@ -13,7 +13,7 @@ const Knowledge = () => {
                         return (
                             <Col className = 'custom-card' xs = { 6 } md = { 3 } xl = { 2 }>
                                 <Row><img className = 'icon' src = { technology.icon }/></Row>
-                                <Row><a className = 'knowledge-link' href = { technology.url } target = '_blank'>{ technology.name }</a></Row>
+                                <Row><a className = 'knowledge-link' href = { technology.url } rel = 'noopener noreferrer' target = '_blank'>{ technology.name }</a></Row>
                             </Col>
                         )
                     })
